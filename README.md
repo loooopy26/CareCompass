@@ -48,7 +48,7 @@ CareCompass는 여러 병원에 흩어진 진료 기록을 한곳에 모아 쉽�
 | 테스트 | ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) ![Testing Library](https://img.shields.io/badge/Testing_Library-E33332?style=flat-square&logo=testinglibrary&logoColor=white) `fast-check` |
 | 코드 검사 | ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) |
 
-화면은 JavaScript(JSX)로 만들었습니다. 모든 화면이 함께 쓰는 API 연결(`api.ts`, `lib/clinicSearch.ts`)과 공통 컴포넌트(`components/ui.tsx`)는 개발 중에 TypeScript로 옮겼고, 나머지 파일은 아직 JavaScript입니다. 타입 검사는 TypeScript로 옮긴 파일에만 적용됩니다.
+
 
 ## 시작하기
 
