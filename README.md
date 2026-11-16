@@ -39,7 +39,7 @@ CareCompass는 여러 병원에 흩어진 진료 기록을 한곳에 모아 쉽�
 
 | 분야 | 사용 |
 |---|---|
-| 기본 | ![React 19](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript 5](https://img.shields.io/badge/TypeScript_5-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Vite 6](https://img.shields.io/badge/Vite_6-9135FF?style=flat-square&logo=vite&logoColor=white) |
+| 기본 | ![React 19](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript 5](https://img.shields.io/badge/TypeScript_5-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Vite 6](https://img.shields.io/badge/Vite_6-9135FF?style=flat-square&logo=vite&logoColor=white) |
 | 스타일 | ![Tailwind CSS 3](https://img.shields.io/badge/Tailwind_CSS_3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) |
 | 라우팅 | ![React Router 6](https://img.shields.io/badge/React_Router_6-CA4245?style=flat-square&logo=reactrouter&logoColor=white) |
 | 모션 | ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white) ![Rive](https://img.shields.io/badge/Rive-1D1D1D?style=flat-square&logo=rive&logoColor=white) |
@@ -47,6 +47,8 @@ CareCompass는 여러 병원에 흩어진 진료 기록을 한곳에 모아 쉽�
 | QR | `qrcode.react` QR 그리기, `jsQR` PC 카메라로 읽기 |
 | 테스트 | ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) ![Testing Library](https://img.shields.io/badge/Testing_Library-E33332?style=flat-square&logo=testinglibrary&logoColor=white) `fast-check` |
 | 코드 검사 | ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) |
+
+화면은 JavaScript(JSX)로 만들었습니다. 모든 화면이 함께 쓰는 API 연결(`api.ts`, `lib/clinicSearch.ts`)과 공통 컴포넌트(`components/ui.tsx`)는 개발 중에 TypeScript로 옮겼고, 나머지 파일은 아직 JavaScript입니다. 타입 검사는 TypeScript로 옮긴 파일에만 적용됩니다.
 
 ## 시작하기
 
@@ -84,7 +86,7 @@ Node.js 24 LTS 중 24.15 이상이 필요합니다. 잠금 파일에 든 jsdom 3
 | 명령 | 하는 일 |
 |---|---|
 | `npm run dev` | 개발 서버 실행 |
-| `npm run typecheck` | 타입 검사만 실행 (`tsc`) |
+| `npm run typecheck` | 타입 검사만 실행 (`tsc`, `.ts`·`.tsx` 파일만 검사) |
 | `npm run build` | 타입 검사 후 배포용 빌드 (`dist/`) |
 | `npm run preview` | 빌드 결과 미리 보기 |
 | `npm run lint` | ESLint 검사 |
